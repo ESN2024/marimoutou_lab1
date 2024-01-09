@@ -103,7 +103,7 @@
 *.wlf
 **/work/*
 *.ini
-
+simulation/*
 # Signal taps
 *.stp
 

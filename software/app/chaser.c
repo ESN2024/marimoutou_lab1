@@ -5,17 +5,23 @@
 
 int main()
 {
-	char data=0x01;
+	int data=0x01;
 	IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE,0x01);
 	usleep(60000);
 	while(1)
 	{
 		while(data != 0x80)
 		{
-			data=data<<1;
+			data= data<<1;
 			IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE,data);
-			usleep(60000);
-			
+			usleep(60000);	
+		}
+		
+		while(data != 0x01)
+		{
+			data= data>>1;
+			IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE,data);
+			usleep(60000);	
 		}
 		
 	}

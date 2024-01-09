@@ -142,7 +142,7 @@ ACDS_VERSION := 18.1
 ELF := mrmtlab1.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += chaser.c
+C_SRCS += chaser_wbtn.c
 CXX_SRCS :=
 ASM_SRCS :=
 
