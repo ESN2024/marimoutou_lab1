@@ -40,7 +40,7 @@ int main()
 	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BTN_BASE,0b1);
 	//alt_irq_register(BTN_IRQ, NULL,(void*)irqhandler );
 	
-	alt_ic_isr_register(BTN_IRQ_INTERRUPT_CONTROLLER_ID,BTN_IRQ,irqhandler,NULL,NULL)
+	alt_ic_isr_register(BTN_IRQ_INTERRUPT_CONTROLLER_ID,BTN_IRQ,irqhandler,NULL,NULL);
 	alt_printf("btn interrupt created");
 	
 	while(1){}

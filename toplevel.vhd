@@ -7,7 +7,7 @@ entity toplevel is
 		CLK                         : in  std_logic:= '0'; --                       clk.clk
 		leds : out std_logic_vector(7 downto 0);        -- pio_0_external_connection.export
 		RESET                   : in  std_logic:= '0';  --                     reset.reset_n
-		BTN   : in  std_logic_vector(7 downto 0) := (others => '0') --   btn_external_connection.export
+		BTN   : in  std_logic--   btn_external_connection.export
 	);
 end entity toplevel;
 
@@ -18,7 +18,7 @@ architecture rtl of toplevel is
 			clk_clk                          : in  std_logic:= 'X'; -- clk
 			pio_0_external_connection_export : out std_logic_vector(7 downto 0);        -- export
 			reset_reset_n                    : in  std_logic:= 'X';  -- reset_n
-			btn_external_connection_export   : in  std_logic_vector(7 downto 0) := (others => '0')                       -- export
+			btn_external_connection_export   : in  std_logic                     -- export
 		);
 	end component lab1;
 begin
