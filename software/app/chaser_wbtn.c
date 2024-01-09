@@ -30,10 +30,6 @@ static void irqhandler (void * context)
 		}
 		
 	}
-
-
-	
-	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BTN_BASE,0b1);
 }
 
 int main()
