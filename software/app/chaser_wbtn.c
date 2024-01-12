@@ -9,7 +9,7 @@
 
 static void irqhandler (void * context)
 {	
-	uint8_t data=0x01;
+	int data=0x01;
 
 	while(data != 0x80)
 	{
