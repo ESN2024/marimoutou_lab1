@@ -9,7 +9,7 @@
 
 static void irqhandler (void * context)
 {
-	int data=0x01;
+	uint8_t data=0x01;
 	IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE,0x01);
 	usleep(60000);
 	
@@ -40,7 +40,9 @@ int main()
 	
 	alt_ic_isr_register(BTN_IRQ_INTERRUPT_CONTROLLER_ID,BTN_IRQ,irqhandler,NULL,NULL);
 	alt_printf("btn interrupt created");
-	
+
+
+
 	while(1){}
 	return 0;
 }
