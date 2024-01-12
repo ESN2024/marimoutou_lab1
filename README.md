@@ -20,9 +20,18 @@ A cela on ajoute :
  * Un PIO 8 bits pour les switches
  * Un PIO 1 bits pour le bouton (KEY1)
 
- L'architecture sous Platform Designer (QSYS) est donc la suivante :
+### Platform Designer
+ L'architecture sous Platform Designer (**QSYS**) est donc la suivante :
  
 ![qsys_lab1](https://github.com/ESN2024/marimoutou_lab1/assets/97475510/1b976335-796f-4a10-b4dd-a33a51d6ed2f)
+
+### Quartus 
+Sur quartus on vient ensuite rédigé notre fichier *toplevel.vhd* et réaliser le pin assignements dans le **pin planner** ou en modifiant le fichier *.qsf*
+On réalise ensuite la compilation compléte de notre design et si il n'y a aucune error nous pouvons flasher notre carte.
+
+### Nios2 Flow
+A partir du terminal Nios2 on vient alors créer notre **Makefile** et générer notre **bsp**.
+Une fois cela fait, nous pouvons écrire nos scripts C, les compiler et les téléverser sur notre carte.
 
 ## Travail effectué
 J'ai ensuite créer 3 scripts C, chacun réalisant une étape bien précise :
