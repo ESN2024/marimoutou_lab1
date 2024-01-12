@@ -9,8 +9,6 @@
 
 static void irqhandler (void * context)
 {
-	IOWR_ALTERA_AVALON_PIO_EDGE_CAP(BTN_BASE,0b0);
-	
 	int data=0x01;
 	IOWR_ALTERA_AVALON_PIO_DATA(PIO_0_BASE,0x01);
 	usleep(60000);
@@ -30,7 +28,6 @@ static void irqhandler (void * context)
 		usleep(60000);	
 	}
 		
-
 }
 
 int main()
