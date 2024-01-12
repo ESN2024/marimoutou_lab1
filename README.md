@@ -25,11 +25,27 @@ A cela on ajoute :
 ![qsys_lab1](https://github.com/ESN2024/marimoutou_lab1/assets/97475510/1b976335-796f-4a10-b4dd-a33a51d6ed2f)
 
 ## Travail effectué
+J'ai ensuite créer 3 scripts C, chacun réalisant une étape bien précise :
 
+### Chenillard seule
+La première à était de réaliser un chenillard simple pour ce faire dans une boucle while nous avons 2 autres boucle réalisant des décalage à gauche et à droite lorsque l'on atteint les extremums de nos Leds(resp. 0 et 7).
 
+### Chenillard actionné par un bouton
+La 2éme étape à était de réaliser un chenillard actionné par un bouton, pour ce faire on utilise un interruption. Au début j'ai rencontré avec la fonction *alt_isr_register()* qui ne fonctionné pas.
+Aprés avoir regarder le documents mise à disposition sur la forge j'ai remarqué la définition suivante **ALT_ENHANCED_INTERRUPT_API_PRESENT** qui apparaissait également dans le documents du moodle. J'ai donc utilisé la fonction *alt_ic_isr_register()* qui elle fonctionne.
+
+<u>Remarques</u> : A priori cela viendrai de la déclaration de la bibliothéque l'utilisation des chevrons ou des guillemets modifie le comportements de l'appel à la fonction *alt_isr_register()*.
+
+### Chenillard controlé en vitesse
+
+Les interruptions étant validé, la derniére étape à était de rajouter les switches 1 à 8 à notre design QSYS et d'utiliser un masque dans la partie software.
+On vient directement lire la valeurs des switches afin de contrôler la variable **time** qui vient directement agir sur la vitesse.
+
+#### Demonstration
 
 https://github.com/ESN2024/marimoutou_lab1/assets/97475510/e23a3ad3-5032-4189-825d-c4b39b10f966
 
 
-
 ## Conclusion
+
+En conclusion, ce TP nous a permis de prendre en main les outils de conception conjointe. C'est un projet réel dans lequel nous avons pu utiliser les interruptions. Globalement une fois l'utilisation des interruptions avec le bouton comprise le reste se déroule naturellement pour les switch.
