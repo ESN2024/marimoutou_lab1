@@ -41,7 +41,7 @@ La première à était de réaliser un chenillard simple pour ce faire dans une 
 
 ### Chenillard actionné par un bouton
 La 2éme étape à était de réaliser un chenillard actionné par un bouton, pour ce faire on utilise un interruption. Au début j'ai rencontré avec la fonction *alt_isr_register()* qui ne fonctionné pas.
-Aprés avoir regarder le documents mise à disposition sur la forge j'ai remarqué la définition suivante **ALT_ENHANCED_INTERRUPT_API_PRESENT** qui apparaissait également dans le documents du moodle. J'ai donc utilisé la fonction *alt_ic_isr_register()* qui elle fonctionne.
+Aprés avoir regarder le documents mise à disposition sur moodle j'ai remarqué la définition suivante **ALT_ENHANCED_INTERRUPT_API_PRESENT** qui apparaissait également dans le fichier *system.h*. J'ai donc utilisé la fonction *alt_ic_isr_register()* qui elle fonctionne.
 
 ![api_register](https://github.com/ESN2024/marimoutou_lab1/assets/97475510/0a3df57c-7b70-4865-b838-63d73492a675)
 
