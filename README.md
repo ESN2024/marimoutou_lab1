@@ -26,7 +26,7 @@ A cela on ajoute :
 ![qsys_lab1](https://github.com/ESN2024/marimoutou_lab1/assets/97475510/1b976335-796f-4a10-b4dd-a33a51d6ed2f)
 
 ### Quartus 
-Sur quartus on vient ensuite rédigé notre fichier *toplevel.vhd* et réaliser le pin assignements dans le **pin planner** ou en modifiant le fichier *.qsf*
+Sur quartus on vient ensuite rédigé notre fichier *toplevel.vhd* et réaliser le pin assignements dans le **pin planner** ou en modifiant le fichier *.qsf* .
 On réalise ensuite la compilation compléte de notre design et si il n'y a aucune erreur nous pouvons flasher l'archihtecture sur notre carte.
 
 ### Nios2 Flow
