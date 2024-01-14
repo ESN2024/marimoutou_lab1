@@ -2,7 +2,7 @@
 
 
 ## Introduction
-Au travers de ce cours nous allons mettre en pratique les notions de conception conjointe vu en cours, nous travaillerons avec une carte DE10-Lite qui possédent un FPGA MAX10 10M50DAF484C7G de la gamme Altera.  
+Au travers de ce labo nous allons mettre en pratique les notions de conception conjointe vu en cours, nous travaillerons avec une carte DE10-Lite qui possédent un FPGA MAX10 10M50DAF484C7G de la gamme Altera.  
 Pour ce premier lab on se propose de réaliser un chenillard de leds qui sera actionnée par une interruptions et dont on pourra modifier la vitesse. Cela nous permettra de nous familiariser avec le flow de conception.
 
 ## Architecture du sytème
