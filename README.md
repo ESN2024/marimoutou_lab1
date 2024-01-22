@@ -27,7 +27,7 @@ A cela on ajoute :
 
 ### Quartus 
 Sur quartus on vient ensuite rédigé notre fichier *toplevel.vhd* et réaliser le pin assignements dans le **pin planner** ou en modifiant le fichier *.qsf* .
-On réalise ensuite la compilation compléte de notre design et si il n'y a aucune erreur nous pouvons flasher l'archihtecture sur notre carte.
+On réalise ensuite la compilation compléte de notre design et si il n'y a aucune erreur nous pouvons flasher l'architecture sur notre carte.
 
 ### Nios2 Flow
 A partir du terminal Nios2 on vient alors créer notre **Makefile** et générer notre **bsp**.
